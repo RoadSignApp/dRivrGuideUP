@@ -1,11 +1,13 @@
 page-home {
+    .bg {
+        background-color: cadetblue;
+    }
     .header1 {
         text-align: center;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-shadow: 10px 10px 10px;
+        text-shadow: 10px 10px 10px rgb(34, 26, 26);
         margin-bottom: -100px;
-    }
-    .bg {
-        background-color: skyblue;
+        tab-size: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 }
