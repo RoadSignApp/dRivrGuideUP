@@ -8,14 +8,24 @@
 
 <ion-content padding>
 
-    <button ion-button color="red" block>US</button>
-    <button ion-button color="red" block>CONTACT</button>
-    <button ion-button color="red" block>EMERGENCY NUMBERS</button>
-    <button ion-button color="red" block>FUTURE WORK</button>
+    <button ion-button (click)="infoPage();" block>US</button>
+    <button ion-button (click)="contactPage();" block>CONTACT</button>
+    <button ion-button (click)="emergencyPage();" block>EMERGENCY NUMBERS</button>
+    <button ion-button color="danger" (click)="fworkPage();" block>FUTURE WORK</button>
 
 
 
-
+    <ion-card>
+        <img src="img/nin-live.png" />
+        <ion-card-content>
+            <ion-card-title>
+                Nine Inch Nails Live
+            </ion-card-title>
+            <p>
+                The most popular industrial group ever, and largely responsible for bringing the music to a mass audience.
+            </p>
+        </ion-card-content>
+    </ion-card>
 
 
 

@@ -1,3 +1,4 @@
+import { InfoPage } from './../pages/info/info';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -7,13 +8,21 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ContactPage } from '../pages/contact/contact';
+import { EmergencyPage } from '../pages/emergency/emergency';
+import { FworkPage } from '../pages/fwork/fwork';
+
 
 @NgModule({
   declarations: [
     MyApp,
     AboutPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    InfoPage,
+    ContactPage,
+    EmergencyPage,
+    FworkPage
   ],
   imports: [
     BrowserModule,
@@ -24,7 +33,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     AboutPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    InfoPage,
+    ContactPage,
+    EmergencyPage,
+    FworkPage
+
   ],
   providers: [
     StatusBar,
