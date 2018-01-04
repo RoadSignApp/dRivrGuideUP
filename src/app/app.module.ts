@@ -1,3 +1,4 @@
+import { Geolocation } from '@ionic-native/geolocation';
 import { RSignsPage } from './../pages/r-signs/r-signs';
 import { InfoPage } from './../pages/info/info';
 import { NgModule, ErrorHandler } from '@angular/core';
@@ -16,6 +17,7 @@ import { EmergencyPage } from '../pages/emergency/emergency';
 import { FworkPage } from '../pages/fwork/fwork';
 import { MapPage } from '../pages/map/map';
 
+
 @NgModule({
   declarations: [
     MyApp,
@@ -28,6 +30,7 @@ import { MapPage } from '../pages/map/map';
     FworkPage,
     MapPage,
     RSignsPage
+    
   ],
   imports: [
     BrowserModule,
@@ -51,6 +54,7 @@ import { MapPage } from '../pages/map/map';
     StatusBar,
     SplashScreen,
     Geolocation,
+    
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
