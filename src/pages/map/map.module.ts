@@ -6,10 +6,9 @@ import { MapPage } from './map';
 @NgModule({
   declarations: [
     MapPage,
-    Geolocation,
   ],
   imports: [
-    
+
     IonicPageModule.forChild(MapPage),
   ],
 })

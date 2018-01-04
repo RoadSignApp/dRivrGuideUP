@@ -1,4 +1,4 @@
-
+import { Geolocation } from '@ionic-native/geolocation';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -20,7 +20,7 @@ import {
   CameraPosition,
   MarkerOptions,
   Marker,
-  Geolocation
+
 
 } from '@ionic-native/google-maps';
 
@@ -79,6 +79,6 @@ export class MapPage {
       });
   }
 
-  
+
 
 }
