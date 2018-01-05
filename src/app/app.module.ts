@@ -53,9 +53,9 @@ import { MapPage } from '../pages/map/map';
   providers: [
     StatusBar,
     SplashScreen,
-    Geolocation,
     
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    
+    { provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}
