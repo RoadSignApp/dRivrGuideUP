@@ -1,4 +1,4 @@
-import { Geolocation } from '@ionic-native/geolocation';
+
 import { RSignsPage } from './../pages/r-signs/r-signs';
 import { InfoPage } from './../pages/info/info';
 import { NgModule, ErrorHandler } from '@angular/core';
@@ -53,9 +53,9 @@ import { MapPage } from '../pages/map/map';
   providers: [
     StatusBar,
     SplashScreen,
-    Geolocation,
     
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    
+    { provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}
