@@ -1,3 +1,5 @@
+
+import { RSignsPage } from './../pages/r-signs/r-signs';
 import { InfoPage } from './../pages/info/info';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -11,6 +13,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { ContactPage } from '../pages/contact/contact';
 import { EmergencyPage } from '../pages/emergency/emergency';
 import { FworkPage } from '../pages/fwork/fwork';
+import { MapPage } from '../pages/map/map';
 
 
 @NgModule({
@@ -22,7 +25,10 @@ import { FworkPage } from '../pages/fwork/fwork';
     InfoPage,
     ContactPage,
     EmergencyPage,
-    FworkPage
+    FworkPage,
+    MapPage,
+    RSignsPage
+    
   ],
   imports: [
     BrowserModule,
@@ -37,13 +43,17 @@ import { FworkPage } from '../pages/fwork/fwork';
     InfoPage,
     ContactPage,
     EmergencyPage,
-    FworkPage
+    FworkPage,
+    MapPage,
+    RSignsPage
 
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    
+    
+    { provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}
