@@ -1,4 +1,4 @@
-//import { GoogleMaps } from '@ionic-native/google-maps';
+import { GoogleMaps } from '@ionic-native/google-maps';
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -24,27 +24,41 @@ declare var google: any;
 })
 export class MapPage {
 
-  @ViewChild('map') mapElement;
-  map: any;
+  @ViewChild('map') mapRef: ElementRef;
 
 
   
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-  ionViewDidLoad(){
-    this.initMap();
+  ionViewDidLoad() {
+    this.showMap();
+
   }
-      initMap(){
-        let latLng = new google.maps.LatLng(-34.9290, 138.6010);
-        let mapOptions = {
-           center: latLng,
-           zoom: 15,
-           mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        this.map = new google.maps.Map(this.mapElement.nativeElement, mapOptions);
+  showMap() {
+    // Location lat long 
+    const location = new google.maps.LatLng(51.507351, -0.127758);
+
+    //Map options
+    const options = {
+      center: location,
+      zoom: 20
+    };
 
 
-      }
-  
+    const map = new google.maps.Map(this.mapRef.nativeElement, options);
+
+    this.addMarker(location, map);
+
+  }
+
+  addMarker(position, map) {
+    return new google.maps.Marker({
+      position,
+      map
+    });
+
+
+  }
+
 }
