@@ -1,3 +1,4 @@
+import { GoogleMaps } from '@ionic-native/google-maps';
 
 import { RSignsPage } from './../pages/r-signs/r-signs';
 import { InfoPage } from './../pages/info/info';
@@ -14,6 +15,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { EmergencyPage } from '../pages/emergency/emergency';
 import { FworkPage } from '../pages/fwork/fwork';
 import { MapPage } from '../pages/map/map';
+
 
 
 @NgModule({
@@ -51,6 +53,7 @@ import { MapPage } from '../pages/map/map';
   providers: [
     StatusBar,
     SplashScreen,
+    GoogleMaps,
     
     
     { provide: ErrorHandler, useClass: IonicErrorHandler}
