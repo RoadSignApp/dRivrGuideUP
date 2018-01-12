@@ -7,6 +7,61 @@
 
 </ion-header>
 <ion-content class="padding">
+    <a class="seg">
+    <div padding>
+        <ion-segment [(ngModel)]="pet">
+            <ion-segment-button value="red">
+                RED
+            </ion-segment-button>
+            <ion-segment-button value="yellow" color="danger">
+                YELLOW
+            </ion-segment-button>
+            <ion-segment-button value="green">
+                GREEN
+            </ion-segment-button>
+        </ion-segment>
+    </div>
 
+    <div [ngSwitch]="pet">
+        <ion-list *ngSwitchCase="'yellow'">
+            <ion-item>
+                <ion-thumbnail item-start>
+                    <img src="../assets/imgs/yellow.jpeg">
+                </ion-thumbnail>
+                
+                   <marquee>YELLOW—A yellow signal light warns you that the red signal is about to appear. When you see the yellow light, you should stop, if you can do so safely. </marquee>
+
+               
+            </ion-item>
+            ...
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'red'">
+            <ion-item>
+                <ion-thumbnail item-start>
+                    <img src="./assets/imgs/red.jpeg">
+                </ion-thumbnail>
+                
+                   <marquee> RED—A red signal light means STOP. RED ARROW—A red arrow means STOP until the green signal or green arrow appears.</marquee>
+
+                
+            </ion-item>
+            ...
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'green'">
+            <ion-item>
+                <ion-thumbnail item-start>
+                    <img src="./assets/imgs/green.png">
+                </ion-thumbnail>
+               
+                   <marquee> GREEN—A green light means GO, but you must first let any vehicles, bicycles, or pedestrians remaining in the intersection get through before you move ahead.</marquee>
+
+            
+            </ion-item>
+            ...
+        </ion-list>
+    </div>
+</a>
 
 </ion-content>
